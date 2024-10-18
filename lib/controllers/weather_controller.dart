@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 
 import '../models/weather.dart';
 import '../services/weather_service.dart';
-import '../utils/error_handler.dart';
+import '../core/errors/error_handler.dart';
 
 class WeatherController extends ChangeNotifier {
   final WeatherService weatherService;

@@ -13,9 +13,9 @@ class Weather {
 
   factory Weather.fromMap(Map<String, dynamic> map) {
     return Weather(
-      cityName: map['cityName'] as String,
-      temperature: map['temperature'] as double,
-      condition: map['condition'] as String,
+      cityName: map['cityName'] ?? 'Unknown City', // Default value
+      temperature: map['temperature']?.toDouble() ?? 0.0, // Default value
+      condition: map['condition'] ?? 'Unknown Condition', // Default value
     );
   }
 

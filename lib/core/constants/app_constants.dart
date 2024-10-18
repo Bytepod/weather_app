@@ -6,5 +6,5 @@ class AppConstants {
       'Please check your internet connection.';
   static const String serverErrorMessage =
       'Server error, please try again later.';
-  static const String unknownErrorMessage = 'An unknown error occurred';
+  static const String unknownErrorMessage = 'An unknown error occurred.';
 }
